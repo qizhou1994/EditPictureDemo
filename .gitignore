@@ -5,7 +5,7 @@
 *.zip
 *.exe
 .gradle
-/.idea
+.idea/
 /local.properties
 /.idea/
 /.idea/caches

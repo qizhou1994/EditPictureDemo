@@ -5,11 +5,11 @@
 主要是对画布中的bitmap进行操作（并没有改变bitmap数据源，而是根据bitmap与matrix属性值进行操作）
 # 基本信息
 1. 主要视图代码：  
-[EditPictureView](editpictureview/EditPictureView.java)设置行列属性，有默认值，然后在java代码中去设置数据源（一个bitmap列表）。  
+[EditPictureView](app/src/main/java/com/zq/editpicturedemo/editpictureview/EditPictureView.java)设置行列属性，有默认值，然后在java代码中去设置数据源（一个bitmap列表）。  
 2. 主要存放每一个bitmap信息的载体：  
-[PictureData](editpictureview/PictureData.java)主要用于存放每一张图在视图中的位置，缩放信息等属性数据。
+[PictureData](app/src/main/java/com/zq/editpicturedemo/editpictureview/PictureData.java)主要用于存放每一张图在视图中的位置，缩放信息等属性数据。
 
-[Activity](MainActivity.java):
+[Activity](app/src/main/java/com/zq/editpicturedemo/MainActivity.java):
 ```
     EditPictureView editView = findViewById(R.id.editView);
     //一个bitmap的数据源 也就是多张图
@@ -20,7 +20,7 @@
     //直接set到视图中
     editView.setDataSourceList(list);
 ```
-[xml](../../../../res/layout/activity_main.xml)
+[xml](app/src/main/res/layout/activity_main.xml)
 ```
  <com.zq.editpicturedemo.editpictureview.EditPictureView
     android:id="@+id/editView"
@@ -37,10 +37,10 @@
 2. 触摸事件的分类，当拦截触摸事件的时候记得返回true.
 3. 手指的区分 
 4. 当前demo有一个额外点，是关于图像处理的，对Bitmap的像素按位修改数值而让bitmap变成一张两个颜色的图，详情可见：  
-[ImgUtil](editpictureview/ImgUtil.java)的getBitmapFromVectorDrawable下。
+[ImgUtil](app/src/main/java/com/zq/editpicturedemo/editpictureview/ImgUtil.java)的getBitmapFromVectorDrawable下。
     
 # demo效果示例:
-<iframe height=500 width=320 src="../../../../../../../gif.gif"/>  
+<iframe height=500 width=320 src="gif.gif"/>  
 
   
 
