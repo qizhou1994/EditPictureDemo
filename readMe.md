@@ -40,7 +40,7 @@
 [ImgUtil](app/src/main/java/com/zq/editpicturedemo/editpictureview/ImgUtil.java)的getBitmapFromVectorDrawable下。
     
 # demo效果示例:
-<iframe height=500 width=320 src="gif.gif"/>  
+![效果](gif.gif)  
 
   
 
